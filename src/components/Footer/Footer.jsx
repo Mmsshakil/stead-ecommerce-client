@@ -156,9 +156,9 @@ const Footer = () => {
           </div>
 
           {/* Payments */}
-          <div className="mb-10 border-b border-gray-700 pb-6 text-center flex justify-end items-center gap-5">
+          <div className="my-3 md:my-10  border-b border-gray-700 py-1 md:py-6 text-center flex justify-end items-center gap-5">
             <div>
-              <p className="font-bold text-sm md:text-xl mb-4 text-gray-400">
+              <p className=" text-sm md:text-xl mb-4 text-gray-400">
                 PAYMENTS ACCEPTED
               </p>
             </div>
