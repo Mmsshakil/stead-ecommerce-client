@@ -10,46 +10,50 @@ const Specification = () => {
 
   return (
     <div className="max-w-full mx-auto bg-white p-1 md:p-6 ">
-      <h2 className="text-2xl font-semibold text-[#1C1C2A] mb-4">
+      <h2 className="text-lg md:text-2xl font-semibold text-[#1C1C2A] mb-1 md:mb-4">
         Specification
       </h2>
 
-      <h1 className="text-lg text-[#1C1C2A] mb-2">
+      <h1 className="text-sm md:text-lg text-[#1C1C2A] mb-2">
         Sharp FP-J30E-B Air Purifier
       </h1>
 
-      <p className="text-[#434A59] text-lg leading-relaxed">{fullText}</p>
+      <p className="text-[#434A59] text-sm md:text-lg leading-relaxed">
+        {fullText}
+      </p>
 
       {showMore ? (
-        <p className="text-[#434A59] text-lg mt-3 leading-relaxed">
+        <p className="text-[#434A59] text-sm md:text-lg mt-3 leading-relaxed">
           {firstFadedtext}
         </p>
       ) : (
-        <p className="text-[#B0B7C3] text-lg mt-3 leading-relaxed">
+        <p className="text-[#B0B7C3] text-sm md:text-lg mt-3 leading-relaxed">
           {firstFadedtext}
         </p>
       )}
 
       {showMore && (
-        <p className="text-[#434A59] text-lg mt-3 leading-relaxed">
+        <p className="text-[#434A59] text-sm md:text-lg mt-3 leading-relaxed">
           {fadedText}
         </p>
       )}
 
-      <button
-        onClick={() => setShowMore(!showMore)}
-        className="mt-6 text-lg font-semibold text-[#1C1C2A] flex items-center  gap-1"
-      >
-        See
-        {showMore ? <p>Less</p> : <p>More</p>}
-        <span
-          className={`transform transition-transform ${
-            showMore ? "rotate-180" : ""
-          }`}
+      <div className="flex flex-col items-center">
+        <button
+          onClick={() => setShowMore(!showMore)}
+          className="mt-6 text-sm font-semibold text-[#1C1C2A] flex items-center  gap-1"
         >
-          ⌄
-        </span>
-      </button>
+          See
+          {showMore ? <p>Less</p> : <p>More</p>}
+          <span
+            className={`transform transition-transform ${
+              showMore ? "rotate-180" : ""
+            }`}
+          >
+            ⌄
+          </span>
+        </button>
+      </div>
     </div>
   );
 };
