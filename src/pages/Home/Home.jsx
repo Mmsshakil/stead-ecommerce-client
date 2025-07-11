@@ -3,6 +3,7 @@ import Description from "./Description/Description";
 import Specification from "./Specification/Specification";
 import DetailsPage from "./DetailsPage/DetailsPage";
 import DeliveryOption from "./DetailsPage/DeliveryOption";
+import DeliveryBy from "./DeliveryBy/DeliveryBy";
 
 const Home = () => {
   return (
@@ -14,8 +15,9 @@ const Home = () => {
         <div className="col-span-3 md:col-span-2 flex flex-col gap-3">
           <DetailsPage></DetailsPage>
         </div>
-        <div className="col-span-1">
+        <div className="col-span-3 md:col-span-1">
           <DeliveryOption></DeliveryOption>
+          <DeliveryBy></DeliveryBy>
         </div>
       </div>
 

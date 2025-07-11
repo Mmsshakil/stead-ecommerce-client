@@ -1,22 +1,37 @@
 import React from "react";
+import { BsBoxSeam } from "react-icons/bs";
 
 const DeliveryOption = () => {
   return (
-    <div className="mt-6 border rounded-lg p-4 bg-slate-50">
-      <h4 className="font-bold text-slate-700 mb-2">Delivery Options</h4>
-      <p className="text-green-600">✔ Regular: 2-3 days</p>
-      <p className="text-gray-400 line-through">✖ Express: Not Available</p>
-      <div className="divider"></div>
-      <div className="flex items-center justify-between">
+    <div className="mt-6 flex flex-col gap-5 border rounded-lg p-4 bg-slate-50">
+      <div>
         <div>
-          <p className="font-semibold text-slate-700">BD FASHION HOUSE</p>
-          <div className="text-xs text-slate-500">
-            Ship: 100% | Chat: 90% | Rating: 99.8%
-          </div>
+          <h4 className="font-semibold text-xl text-slate-700 mb-2">
+            <span> Delivery Options</span>
+          </h4>
+          <p className="flex items-center gap-2 font-semibold">
+            <span className="text-green-600 text-2xl">
+              <BsBoxSeam></BsBoxSeam>
+            </span>
+            <span>Regular</span>
+          </p>
         </div>
-        <div className="flex gap-2">
-          <button className="btn btn-outline btn-sm">Chat</button>
-          <button className="btn btn-outline btn-sm">View Shop</button>
+        <div>
+          <h1 className="text-gray-600"> Delivery within 2-3 days</h1>
+        </div>
+      </div>
+      <div className="text-gray-400">
+        <div>
+          <p className="flex items-center gap-2 font-semibold">
+            <span className="text-2xl">
+              <BsBoxSeam></BsBoxSeam>
+            </span>
+            <span>Express</span>
+            <span className="text-red-300">Not Available</span>
+          </p>
+        </div>
+        <div>
+          <h1> Delivery within 2-3 days</h1>
         </div>
       </div>
     </div>
